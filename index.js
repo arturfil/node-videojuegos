@@ -15,6 +15,7 @@ app.use(cors());
 
 // Database Setup
 mongoose.connect(process.env.DATABASE, {
+  useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true
 }).then(() => { console.log("Database connected")})
